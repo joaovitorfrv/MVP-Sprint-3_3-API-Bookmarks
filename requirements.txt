@@ -1,0 +1,10 @@
+bs4
+flask
+flask-sqlalchemy
+flask-openapi3
+flask_cors
+SQLAlchemy
+sqlalchemy-utils
+requests
+flask-openapi3[swagger,rapidoc]
+pydantic
