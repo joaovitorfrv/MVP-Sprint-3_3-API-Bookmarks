@@ -99,7 +99,6 @@ def update_bookmark_service(bookmark_id: int, form_data: dict):
         if 'title' in form_data:
             bookmark.title = form_data['title']
         if 'url' in form_data and form_data['url'].strip():
-            print(f'URL=|{form_data['url']}|')
             bookmark.url = form_data['url']
             # Atualiza favicon se URL mudou
             bookmark.icon_url = get_favicon_url(form_data['url'])

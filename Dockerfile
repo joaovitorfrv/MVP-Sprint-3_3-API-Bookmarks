@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:3.10
 
 WORKDIR /app
 
@@ -10,6 +10,6 @@ COPY . .
 # Criar diretório para o banco de dados SQLite
 RUN mkdir -p database
 
-EXPOSE 5003
+EXPOSE 5002
 
 CMD ["python", "app.py"]
